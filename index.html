@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Abhinav Aby - Portfolio (First year CSE student)" />
+    <title>Abhinav Aby | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar" aria-label="Primary navigation">
+      <div class="topbar__inner">
+        <div class="brand">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">Abhinav Aby</span>
+        </div>
+
+        <nav class="nav" aria-label="Sections">
+          <a class="nav__link" href="#home">Home</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#links">Links</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-label="Hero">
+        <div class="hero__sticky">
+          <div class="container hero__wrap">
+            <div class="grain" aria-hidden="true"></div>
+
+            <div class="hero__layout">
+              <div class="hero__copy">
+                <p class="hero__kicker">
+                  <span aria-hidden="true">👋</span>
+                  <span>my name is Abhinav and I am a first-year CSE student</span>
+                </p>
+
+                <h1 class="hero-title" aria-label="Web designer and CSE learner">
+                  <span class="hero-title__line hero-title__solid">Web designer</span>
+                  <span class="hero-title__line hero-title__outline">&amp; CSE learner</span>
+                </h1>
+
+                <p class="hero__sub">based in Palai, India.</p>
+
+                <div class="hero__cta" role="group" aria-label="Quick actions">
+                  <button class="cta-btn cta-btn--dark" type="button" data-scroll-to="#projects">
+                    You need a designer
+                  </button>
+                  <button class="cta-btn cta-btn--light" type="button" data-scroll-to="#links">Connect</button>
+                </div>
+              </div>
+
+              <div class="hero__portrait" aria-label="Portrait">
+                <img
+                  class="hero__img"
+                  src="./assets/Adobe_Express_-_file-76e97240-0d38-49b8-8b22-5cbcc8aaaceb.png"
+                  alt="Abhinav Aby portrait"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>About</h2>
+            <p>Short introduction and what I’m learning right now.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card" data-reveal>
+              <h3 class="card__title">Who I am</h3>
+              <p class="card__text">
+                I’m a first-year Computer Science student at <strong>SJCET Palai</strong>. I enjoy building
+                small tools, learning data structures, and polishing UI details.
+              </p>
+            </div>
+            <div class="card" data-reveal>
+              <h3 class="card__title">How I work</h3>
+              <p class="card__text">
+                I learn by doing: start simple, ship a working prototype, then iterate.
+                My goal is to become confident in both problem-solving and web development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--alt">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>Projects</h2>
+            <p>Replace these placeholders with your real projects.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="project card" data-reveal data-stagger>
+              <div class="project__top" data-reveal>
+                <div class="project__badge" aria-hidden="true">01</div>
+                <div class="project__title-row">
+                  <h3 class="project__title">Portfolio Starter</h3>
+                  <span class="project__status">Live</span>
+                </div>
+              </div>
+
+              <p class="project__desc" data-reveal>
+                A clean portfolio template with sections, animations, and smooth scrolling.
+              </p>
+
+              <div class="project__meta" data-reveal>
+                <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
+              </div>
+
+              <div class="project__actions" data-reveal>
+                <a class="cta-btn cta-btn--light" href="#links">Discuss</a>
+                <button class="cta-btn cta-btn--dark" type="button" data-project-toggle aria-expanded="false">
+                  View details
+                </button>
+              </div>
+
+              <div class="project__more" hidden>
+                <ul class="project__bullets">
+                  <li>Responsive layout + accessible navigation</li>
+                  <li>Scroll-based animations and staggered reveals</li>
+                  <li>Clean structure for easy editing</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project card" data-reveal data-stagger>
+              <div class="project__top" data-reveal>
+                <div class="project__badge" aria-hidden="true">02</div>
+                <div class="project__title-row">
+                  <h3 class="project__title">DSA Practice Tracker</h3>
+                  <span class="project__status project__status--build">Building</span>
+                </div>
+              </div>
+
+              <p class="project__desc" data-reveal>Track topics, add notes, and monitor progress over time.</p>
+
+              <div class="project__meta" data-reveal>
+                <span class="chip">Algorithms</span><span class="chip">Learning</span>
+              </div>
+
+              <div class="project__actions" data-reveal>
+                <a class="cta-btn cta-btn--light" href="#links">Discuss</a>
+                <button class="cta-btn cta-btn--dark" type="button" data-project-toggle aria-expanded="false">
+                  View details
+                </button>
+              </div>
+
+              <div class="project__more" hidden>
+                <ul class="project__bullets">
+                  <li>Topic-wise roadmap and daily goals</li>
+                  <li>Progress stats + notes per problem</li>
+                  <li>Exportable weekly summary</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project card" data-reveal data-stagger>
+              <div class="project__top" data-reveal>
+                <div class="project__badge" aria-hidden="true">03</div>
+                <div class="project__title-row">
+                  <h3 class="project__title">Study Notes Web App</h3>
+                  <span class="project__status project__status--idea">Idea</span>
+                </div>
+              </div>
+
+              <p class="project__desc" data-reveal>A lightweight notes app with search and tags.</p>
+
+              <div class="project__meta" data-reveal>
+                <span class="chip">Frontend</span><span class="chip">UX</span>
+              </div>
+
+              <div class="project__actions" data-reveal>
+                <a class="cta-btn cta-btn--light" href="#links">Discuss</a>
+                <button class="cta-btn cta-btn--dark" type="button" data-project-toggle aria-expanded="false">
+                  View details
+                </button>
+              </div>
+
+              <div class="project__more" hidden>
+                <ul class="project__bullets">
+                  <li>Fast search and tag filters</li>
+                  <li>Offline-first notes storage</li>
+                  <li>Clean reading-mode UI</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>Skills</h2>
+            <p>These are areas I’m actively learning.</p>
+          </div>
+
+          <div class="skills">
+            <div class="skill" data-reveal>
+              <div class="skill__title">Web Development</div>
+              <div class="skill__bar" role="progressbar" aria-label="Web Development" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill__fill" style="width: 60%"></span>
+              </div>
+              <div class="skill__meta">HTML, CSS, JavaScript</div>
+            </div>
+            <div class="skill" data-reveal>
+              <div class="skill__title">DSA</div>
+              <div class="skill__bar" role="progressbar" aria-label="DSA" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill__fill" style="width: 45%"></span>
+              </div>
+              <div class="skill__meta">Arrays, Strings, Recursion</div>
+            </div>
+            <div class="skill" data-reveal>
+              <div class="skill__title">UI/UX</div>
+              <div class="skill__bar" role="progressbar" aria-label="UI/UX" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <span class="skill__fill" style="width: 50%"></span>
+              </div>
+              <div class="skill__meta">Layout, typography, animations</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="links" class="section section--alt">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2>Links</h2>
+            <p>Hover to pause. Click to open.</p>
+          </div>
+
+          <div class="social-marquee" data-reveal aria-label="Social links loop">
+            <div class="marquee">
+              <div class="marquee__track">
+                <div class="marquee__group">
+                      <a class="icon-pill" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M12 .6a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.1c-3.21.7-3.89-1.37-3.89-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.12-3.07 0 0 .96-.31 3.14 1.18a10.9 10.9 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.6.24 2.78.12 3.07.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.56A11.5 11.5 0 0 0 12 .6Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">GitHub</span>
+                      </a>
+
+                      <a class="icon-pill" href="mailto:hello@abhinavaby.dev" aria-label="Email">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-6.67 4.45a2 2 0 0 1-2.22 0L4.04 8.25A.75.75 0 1 1 4.86 7l6.53 4.36a.5.5 0 0 0 .55 0L18.77 7a.75.75 0 1 1 .83 1.25Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">Mail</span>
+                      </a>
+
+                      <a class="icon-pill" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.5A4 4 0 0 0 3.5 7.5v9a4 4 0 0 0 4 4h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.75-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">Instagram</span>
+                      </a>
+
+                      <a class="icon-pill" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3.5 9h3v11h-3V9Zm7 0h2.9v1.5h.04c.4-.75 1.38-1.54 2.84-1.54 3.03 0 3.59 2 3.59 4.6V20h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.78V20h-3V9Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">LinkedIn</span>
+                      </a>
+
+                      <a class="icon-pill" href="tel:+910000000000" aria-label="Mobile">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 1.5a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H7Zm5 15.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">Mobile</span>
+                      </a>
+                </div>
+
+                <div class="marquee__group" aria-hidden="true">
+                      <a class="icon-pill" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M12 .6a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.1c-3.21.7-3.89-1.37-3.89-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.12-3.07 0 0 .96-.31 3.14 1.18a10.9 10.9 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.6.24 2.78.12 3.07.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.56A11.5 11.5 0 0 0 12 .6Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">GitHub</span>
+                      </a>
+                      <a class="icon-pill" href="mailto:hello@abhinavaby.dev" aria-label="Email">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-6.67 4.45a2 2 0 0 1-2.22 0L4.04 8.25A.75.75 0 1 1 4.86 7l6.53 4.36a.5.5 0 0 0 .55 0L18.77 7a.75.75 0 1 1 .83 1.25Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">Mail</span>
+                      </a>
+                      <a class="icon-pill" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.5A4 4 0 0 0 3.5 7.5v9a4 4 0 0 0 4 4h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.75-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">Instagram</span>
+                      </a>
+                      <a class="icon-pill" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3.5 9h3v11h-3V9Zm7 0h2.9v1.5h.04c.4-.75 1.38-1.54 2.84-1.54 3.03 0 3.59 2 3.59 4.6V20h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.78V20h-3V9Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">LinkedIn</span>
+                      </a>
+                      <a class="icon-pill" href="tel:+910000000000" aria-label="Mobile">
+                        <span class="icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 1.5a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H7Zm5 15.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
+                            />
+                          </svg>
+                        </span>
+                        <span class="icon-pill__label">Mobile</span>
+                      </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" aria-label="Footer">
+        <div class="container footer__inner">
+          <span>Copyright © <span id="year"></span> Abhinav Aby</span>
+          <span class="footer__small">Built with HTML/CSS/JS. Replace placeholders with your real info.</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
