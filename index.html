@@ -1,372 +1,611 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Abhinav Aby - Portfolio (First year CSE student)" />
-    <title>Abhinav Aby | Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SJCET Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&amp;family=Inter:wght@400&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed-dim": "#d0bcff",
+                      "tertiary-container": "#00a773",
+                      "inverse-surface": "#e2e2e8",
+                      "background": "#111317",
+                      "primary-fixed": "#ffdbce",
+                      "on-tertiary-container": "#003320",
+                      "on-tertiary": "#003824",
+                      "surface-container": "#1e2024",
+                      "on-surface": "#e2e2e8",
+                      "on-secondary-fixed": "#23005c",
+                      "on-tertiary-fixed": "#002113",
+                      "surface-bright": "#37393e",
+                      "on-primary-fixed": "#370e00",
+                      "on-surface-variant": "#e4beb1",
+                      "tertiary": "#4edea3",
+                      "tertiary-fixed": "#6ffbbe",
+                      "on-tertiary-fixed-variant": "#005236",
+                      "error-container": "#93000a",
+                      "surface-tint": "#ffb59a",
+                      "surface-dim": "#111317",
+                      "on-primary-fixed-variant": "#802a00",
+                      "on-background": "#e2e2e8",
+                      "on-error": "#690005",
+                      "on-secondary": "#3c0091",
+                      "surface-container-highest": "#333539",
+                      "surface-container-high": "#282a2e",
+                      "secondary-container": "#571bc1",
+                      "surface-container-lowest": "#0c0e12",
+                      "surface-variant": "#333539",
+                      "secondary-fixed": "#e9ddff",
+                      "tertiary-fixed-dim": "#4edea3",
+                      "error": "#ffb4ab",
+                      "primary": "#ffb59a",
+                      "on-secondary-fixed-variant": "#5516be",
+                      "on-secondary-container": "#c4abff",
+                      "outline": "#ab897d",
+                      "inverse-primary": "#a73a00",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#ffb59a",
+                      "outline-variant": "#5b4137",
+                      "secondary": "#d0bcff",
+                      "primary-container": "#ff5c00",
+                      "on-primary": "#5a1b00",
+                      "surface-container-low": "#1a1c20",
+                      "surface": "#111317",
+                      "inverse-on-surface": "#2f3035",
+                      "on-primary-container": "#521800"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "grid-gutter": "24px",
+                      "section-gap-mobile": "80px",
+                      "section-gap-desktop": "160px",
+                      "grid-margin": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "code-sm": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "code-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #111317; /* bg-background */
+            color: #e2e2e8; /* text-on-background */
+        }
+        
+        /* Subtle glow effects */
+        .glow-orange {
+            background: radial-gradient(circle, rgba(255,92,0,0.15) 0%, rgba(17,19,23,0) 70%);
+        }
+        .glow-purple {
+            background: radial-gradient(circle, rgba(208,188,255,0.1) 0%, rgba(17,19,23,0) 70%);
+        }
 
-    <header class="topbar" aria-label="Primary navigation">
-      <div class="topbar__inner">
-        <div class="brand">
-          <span class="brand__dot" aria-hidden="true"></span>
-          <span class="brand__name">Abhinav Aby</span>
-        </div>
+        /* Animations */
+        @media (prefers-reduced-motion: no-preference) {
+            .animate-fade-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+                will-change: opacity, transform;
+            }
+            .animate-fade-up.in-view {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .hero-stagger > * {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                will-change: opacity, transform;
+            }
+            .hero-stagger > *:nth-child(1) { animation-delay: 0.1s; }
+            .hero-stagger > *:nth-child(2) { animation-delay: 0.2s; }
+            .hero-stagger > *:nth-child(3) { animation-delay: 0.3s; }
+            .hero-stagger > *:nth-child(4) { animation-delay: 0.4s; }
 
-        <nav class="nav" aria-label="Sections">
-          <a class="nav__link" href="#home">Home</a>
-          <a class="nav__link" href="#about">About</a>
-          <a class="nav__link" href="#projects">Projects</a>
-          <a class="nav__link" href="#skills">Skills</a>
-          <a class="nav__link" href="#links">Links</a>
-        </nav>
-      </div>
-    </header>
+            @keyframes fadeUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
 
-    <main id="main">
-      <section id="home" class="hero" aria-label="Hero">
-        <div class="hero__sticky">
-          <div class="container hero__wrap">
-            <div class="grain" aria-hidden="true"></div>
+            .float-anim {
+                animation: float 4s ease-in-out infinite;
+                will-change: transform;
+            }
+            .float-anim:nth-child(2) { animation-delay: 1s; }
+            .float-anim:nth-child(3) { animation-delay: 2s; }
 
-            <div class="hero__layout">
-              <div class="hero__copy">
-                <p class="hero__kicker">
-                  <span aria-hidden="true">👋</span>
-                  <span>my name is Abhinav and I am a first-year CSE student</span>
-                </p>
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+                100% { transform: translateY(0px); }
+            }
+        }
 
-                <h1 class="hero-title" aria-label="Web designer and CSE learner">
-                  <span class="hero-title__line hero-title__solid">Web designer</span>
-                  <span class="hero-title__line hero-title__outline">&amp; CSE learner</span>
+        /* Card Hover Effects */
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, box-shadow, border-color;
+        }
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+        }
+        .project-card.hover-primary:hover {
+            border-color: rgba(255, 92, 0, 0.6);
+            box-shadow: 0 20px 40px -10px rgba(255, 92, 0, 0.15);
+        }
+        .project-card.hover-secondary:hover {
+            border-color: rgba(208, 188, 255, 0.6);
+            box-shadow: 0 20px 40px -10px rgba(208, 188, 255, 0.15);
+        }
+
+        /* Magnetic Button Base */
+        .magnetic-btn {
+            display: inline-block;
+            transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+        
+        /* New Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 800ms ease-out, transform 800ms ease-out;
+            will-change: opacity, transform;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex fixed top-0 left-0 w-full z-50 justify-center items-center relative px-grid-margin py-4 max-w-container-max mx-auto bg-background/80 backdrop-blur-xl border-b border-outline-variant">
+<div class="absolute left-6 font-headline-md text-headline-md font-extrabold text-primary">Portfolio</div>
+<ul class="flex items-center space-x-8">
+<li class=""><a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#about">About</a></li>
+<li class=""><a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#projects">Projects</a></li>
+<li class=""><a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#skills">Skills</a></li>
+<li class=""><a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#contact">Contact</a></li>
+</ul>
+<a class="absolute right-6 bg-primary-container text-white px-6 py-2 rounded font-label-md text-label-md hover:scale-105 transition-transform shadow-[0_0_15px_rgba(255,92,0,0.3)] magnetic-btn" href="#resume">
+            Resume
+        </a>
+</nav>
+<!-- SideNavBar (Mobile) -->
+<nav class="md:hidden fixed inset-y-0 left-0 z-[60] flex flex-col p-6 space-y-4 bg-surface-container-high/95 backdrop-blur-2xl border-r border-outline-variant shadow-xl w-64 transform -translate-x-full transition-transform duration-300" id="mobileNav">
+<div class="flex items-center space-x-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Developer Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfdF2u9Iha2AdQ459qrF2G5UMn9sbGnoxMlCuWmhUlCykGijMM2xlCRKiJuPlmFj6hSVFZfMZNo8H6_Hn6mtHKtTBWlHMXMo6speF_KxJHB_e-u8P3e3mtlSJEaDRq-fwOHDrhTfOGdjK8VUPy8UZkCzt23N2akzL4gRZsptz-TUBFpw18qEQqsv1jOzL1c04TWkpZRBr3x-ea_iWcGYLvbM62grB2P6BMd2GeBk6RnF4X1rccgCAGX9ziDGEoH1XMGJgUUnwjSg">
+</div>
+<div>
+<div class="text-primary font-headline-lg-mobile text-lg">CS Student</div>
+<div class="text-on-surface-variant text-sm">SJCET PALAI</div>
+</div>
+</div>
+<ul class="flex-1 space-y-2">
+<li class="">
+<a class="bg-secondary-container text-on-secondary-container rounded-xl flex items-center p-4 active:scale-[0.98] transition-transform" href="#home">
+<span class="material-symbols-outlined mr-3">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+</li>
+<li class="">
+<a class="text-on-surface-variant flex items-center p-4 hover:bg-surface-bright transition-colors rounded-xl" href="#projects">
+<span class="material-symbols-outlined mr-3">code</span>
+<span class="font-label-md text-label-md">Projects</span>
+</a>
+</li>
+<li class="">
+<a class="text-on-surface-variant flex items-center p-4 hover:bg-surface-bright transition-colors rounded-xl" href="#skills">
+<span class="material-symbols-outlined mr-3">psychology</span>
+<span class="font-label-md text-label-md">Skills</span>
+</a>
+</li>
+<li class="">
+<a class="text-on-surface-variant flex items-center p-4 hover:bg-surface-bright transition-colors rounded-xl" href="#contact">
+<span class="material-symbols-outlined mr-3">mail</span>
+<span class="font-label-md text-label-md">Contact</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Mobile Nav Toggle -->
+<button class="md:hidden fixed top-4 right-4 z-[70] p-2 bg-surface-container rounded-lg border border-outline-variant text-on-surface" id="navToggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<main class="w-full max-w-container-max mx-auto px-grid-margin pt-32 pb-16">
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col justify-center relative mb-section-gap-mobile md:mb-section-gap-desktop reveal active" id="home">
+<div class="absolute top-0 right-0 w-[600px] h-[600px] glow-orange -z-10 rounded-full translate-x-1/3 -translate-y-1/4"></div>
+<div class="max-w-3xl hero-stagger">
+<div class="inline-flex items-center space-x-2 mb-6 bg-surface-container-high px-3 py-1.5 rounded-full border border-outline-variant">
+<div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Available for work</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-[84px] text-on-surface mb-6">
+                    Hi, I'm <span class="text-primary-container">Abhinav Aby</span>,<br>
+<span class="text-secondary">CS Student</span> at SJCET.
                 </h1>
-
-                <p class="hero__sub">based in Palai, India.</p>
-
-                <div class="hero__cta" role="group" aria-label="Quick actions">
-                  <button class="cta-btn cta-btn--dark" type="button" data-scroll-to="#projects">
-                    You need a designer
-                  </button>
-                  <button class="cta-btn cta-btn--light" type="button" data-scroll-to="#links">Connect</button>
-                </div>
-              </div>
-
-              <div class="hero__portrait" aria-label="Portrait">
-                <img
-                  class="hero__img"
-                  src="Adobe_Express_-_file-76e97240-0d38-49b8-8b22-5cbcc8aaaceb.png"
-                  alt="Abhinav Aby portrait"
-                  loading="eager"
-                />
-              </div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                    Engineering robust digital solutions with a focus on scalable architecture and intuitive user experiences. Passionate about bridging the gap between complex algorithms and practical applications.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary-container text-white px-8 py-4 rounded font-label-md text-label-md hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(255,92,0,0.2)] magnetic-btn" href="#projects">
+                        View My Work
+                    </a>
+<a class="bg-transparent text-white px-8 py-4 rounded font-label-md text-label-md border border-secondary hover:bg-secondary/10 transition-colors magnetic-btn" href="#contact">
+                        Get In Touch
+                    </a>
+</div>
+</div><div class="relative md:absolute right-0 bottom-0 w-full md:w-1/3 max-w-[400px] h-auto mt-10 md:mt-0 mx-auto md:mx-0 pointer-events-none">
+<img alt="Abhinav Aby" class="w-full h-auto object-contain object-bottom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb-YsMuitE8LmpzXRLr86OH4dvigI00TcmKEchy99fRqklNSgwnagkEjyuZltNYNfzT8R106lIx9qSL71GYxVCn8eOONMnIIexIsu5kpc50qNlswh5s1rQ_JaVU___4cdZpbWQE0H5zBJA7i-k1Bcec_o2-jbK02FZlkri6bBY-voSmSJHF83HohkpbyfPZ7Xu9Mn6sv7-WJjCmx8DDY0AdHNJsDICOiSXbuBd8aS-tFjQdOxLHa7a9mFvLn9bFJYBY4ZQwLQOyQ">
+</div>
+<div class="mt-20 flex items-center space-x-6 text-on-surface-variant opacity-60 hero-stagger">
+<span class="font-label-md text-label-md uppercase tracking-wider">Tech Stack</span>
+<div class="h-px bg-outline-variant flex-1 max-w-xs"></div>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-3xl float-anim">terminal</span>
+<span class="material-symbols-outlined text-3xl float-anim">database</span>
+<span class="material-symbols-outlined text-3xl float-anim">cloud</span>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="mb-section-gap-mobile md:mb-section-gap-desktop relative scroll-reveal animate-fade-up reveal in-view active" id="about">
+<div class="absolute left-0 bottom-0 w-[500px] h-[500px] glow-purple -z-10 rounded-full -translate-x-1/2 translate-y-1/4"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-center">
+<div class="col-span-1 md:col-span-10 md:col-start-2">
+<h2 class="font-headline-lg text-headline-lg md:font-headline-lg md:text-headline-lg text-on-surface mb-6">Driven by <span class="text-secondary">Logic</span> &amp; <span class="text-primary">Creativity</span>.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                         As a Computer Science undergraduate at St. Joseph's College of Engineering and Technology (SJCET) Palai, I've cultivated a deep appreciation for computational theory and practical software engineering.
+                     </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                         My academic journey is complemented by hands-on experience in building full-stack web applications, exploring machine learning models, and optimizing database structures. I thrive in environments that challenge me to solve complex problems with elegant code.
+                     </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="border-l-2 border-primary-container pl-4">
+<div class="font-headline-md text-headline-md text-on-surface">9.55</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase mt-1">Current GPA</div>
+</div>
+<div class="border-l-2 border-secondary pl-4">
+<div class="font-headline-md text-headline-md text-on-surface">15+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase mt-1">Projects Built</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="mb-section-gap-mobile md:mb-section-gap-desktop scroll-reveal animate-fade-up reveal in-view active" id="projects">
+<h2 class="font-headline-lg text-headline-lg md:font-headline-lg md:text-headline-lg text-on-surface mb-12">Featured <span class="text-primary-container">Work</span></h2>
+<div class="grid grid-cols-1 gap-grid-gutter lg:grid-cols-3 md:grid-cols-2"><!-- Project 1 -->
+<div class="project-card hover-primary bg-surface-container rounded-xl border border-outline-variant overflow-hidden group reveal active">
+<div class="h-64 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent z-10"></div>
+<img alt="Full Stack Login Page" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh3SbNloW5HX7jEqMouLk9iWadvgQ89y8RV0Al5GcPDCEZnjv0VpEOGPIOIFOHoYrQS0TNnI_mXNvVFGZyZR2QQpVt5QuEfnk15rQ0VacDdkMxqfbrnRr5N904B-Uojd7Masw1PV_XX7uCW-vW16QwpNwunX6NQWtKKgQiHZZUUZDayDfvtBDC4TKJLT4FJWSRcwdBuaHWsgoqMohnmWVPEFUk-3wNS_IC-widh8aSJ92ncydSjAjWnKwSl2TQCNbnLtXOGxN55w">
+</div>
+<div class="p-8 relative z-20 -mt-10">
+<div class="flex gap-2 mb-4">
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">React</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Node.js</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">MongoDB</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Full Stack Login Page</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A secure and responsive authentication system featuring JWT, hashed passwords, and session management.</p>
+<a class="inline-flex items-center text-primary font-label-md text-label-md hover:text-primary-container transition-colors" href="https://github.com/abhinavaby/Full-stack-login-page">
+            View Source <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card hover-secondary bg-surface-container rounded-xl border border-outline-variant overflow-hidden group reveal active">
+<div class="h-64 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent z-10"></div>
+<img alt="Full Stack Messaging Website" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ9is5tHHjS6BUwFTosKk1Kg6Q8ETomCOQc7ibKWnqd22QYlRvbmW6W4rBFs-g1WoWS1ZRLh0Z0WAkMj4MPjuYDZvdnbmyfnrvoMQPwiBEn4YaCp0jX08md17PRK4v5K1CtFrgUB2wb_Tee-4B-xRum-3iLN8gy8A-WykFp2OLLpkrzW-m8yZ4OK2eBYdwoZKv2KOrApHdbQIOHGRuenlYwTOnKBw27NeAj4LSq5KYTobQ6hgbEmZSGPIzhdXebrnp2TwsNLkK3A">
+</div>
+<div class="p-8 relative z-20 -mt-10">
+<div class="flex gap-2 mb-4">
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Socket.io</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Express</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Tailwind</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Full Stack Messaging Website</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Real-time communication platform supporting private chat, groups, and presence indicators.</p>
+<a class="inline-flex items-center text-secondary font-label-md text-label-md hover:text-secondary-container transition-colors" href="https://github.com/abhinavaby/messaging-website">
+            View Source <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card hover-primary bg-surface-container rounded-xl border border-outline-variant overflow-hidden group reveal active">
+<div class="h-64 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent z-10"></div>
+<img alt="10 JavaScript Mini Projects" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPcSJdkpW8jRYxjLdDhH0OAuNoW442e9NmI5YKPbAsjkEjMEc8J_6OnwkciDmpoEjITRgA_B98mA6sosM6ajRpWttl6o8EBP2Xu60YxWHz50woBmagta7vacdsDFFBVjMGOjvlBBgUi3XB5XRelXMsyUSLiV7CzwkV1Q9RQLVa4TuBWS1H2yVuM_U0Vr3X6Yn6-JGHcAg39T0x1l5FLM9jjAEUS-jV5tFk4UZ4H6xuNhZd7BtNk6s33BEIxRLdOi1OeSx7OJvVqA">
+</div>
+<div class="p-8 relative z-20 -mt-10">
+<div class="flex gap-2 mb-4">
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">HTML</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">CSS</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">JS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">10 JavaScript Mini Projects</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A collection of DOM manipulation projects including a calculator, to-do list, and dynamic weather app.</p>
+<a class="inline-flex items-center text-primary font-label-md text-label-md hover:text-primary-container transition-colors" href="https://abhinavaby.github.io/JS-microprojects/">
+            View Source <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-card hover-secondary bg-surface-container rounded-xl border border-outline-variant overflow-hidden group reveal active">
+<div class="h-64 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent z-10"></div>
+<img alt="API Directory" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh3SbNloW5HX7jEqMouLk9iWadvgQ89y8RV0Al5GcPDCEZnjv0VpEOGPIOIFOHoYrQS0TNnI_mXNvVFGZyZR2QQpVt5QuEfnk15rQ0VacDdkMxqfbrnRr5N904B-Uojd7Masw1PV_XX7uCW-vW16QwpNwunX6NQWtKKgQiHZZUUZDayDfvtBDC4TKJLT4FJWSRcwdBuaHWsgoqMohnmWVPEFUk-3wNS_IC-widh8aSJ92ncydSjAjWnKwSl2TQCNbnLtXOGxN55w">
+</div>
+<div class="p-8 relative z-20 -mt-10">
+<div class="flex gap-2 mb-4">
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Next.js</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">REST API</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Docs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">API Directory</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A curated list of public APIs with search functionality and implementation documentation for developers.</p>
+<a class="inline-flex items-center text-secondary font-label-md text-label-md hover:text-secondary-container transition-colors" href="https://abhinavaby.github.io/Pokemon-fetching-API/ ">
+            View Source <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="project-card hover-primary bg-surface-container rounded-xl border border-outline-variant overflow-hidden group reveal active">
+<div class="h-64 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent z-10"></div>
+<img alt="AI Chatbot" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ9is5tHHjS6BUwFTosKk1Kg6Q8ETomCOQc7ibKWnqd22QYlRvbmW6W4rBFs-g1WoWS1ZRLh0Z0WAkMj4MPjuYDZvdnbmyfnrvoMQPwiBEn4YaCp0jX08md17PRK4v5K1CtFrgUB2wb_Tee-4B-xRum-3iLN8gy8A-WykFp2OLLpkrzW-m8yZ4OK2eBYdwoZKv2KOrApHdbQIOHGRuenlYwTOnKBw27NeAj4LSq5KYTobQ6hgbEmZSGPIzhdXebrnp2TwsNLkK3A">
+</div>
+<div class="p-8 relative z-20 -mt-10">
+<div class="flex gap-2 mb-4">
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Python</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">OpenAI</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Streamlit</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">AI Chatbot</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Intelligent assistant powered by GPT models, capable of context-aware conversations and data retrieval.</p>
+<a class="inline-flex items-center text-primary font-label-md text-label-md hover:text-primary-container transition-colors" href="https://abhinavaby.github.io/chat-bot/">
+            View Source <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="project-card hover-secondary bg-surface-container rounded-xl border border-outline-variant overflow-hidden group reveal active">
+<div class="h-64 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent z-10"></div>
+<img alt="Cursor Game Website" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA3wD1MI2ITulnC3nhQ0FUaxr6uCT56d9b_H8wGfzr7daNMjgI1QkanVB5K40m-d-1P0wHXpo3wF7lw3KzVyHnCdh4AB5_KEu954z3nwqFOL6R9BF2WHdTqC-npwt5GT7oFQpx1egrtLGbCcCO4l2vSE5Lv5knuTiNG4WTvbkOVUSH-gNj4aXGHqq7beMlp8YxkIWv5KuUy7csB4PklnP91DBOf0j90WGYUV-r7bPwsydCasM_QiYiYPUkqtEC0egJ7NZXcVtWoA">
+</div>
+<div class="p-8 relative z-20 -mt-10">
+<div class="flex gap-2 mb-4">
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Canvas API</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">JavaScript</span>
+<span class="font-code-sm text-code-sm bg-surface-variant text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Design</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Cursor Game Website</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">An interactive browser-based game focusing on precision cursor control and reactive gameplay.</p>
+<a class="inline-flex items-center text-secondary font-label-md text-label-md hover:text-secondary-container transition-colors" href="https://abhinavaby.github.io/cursor-games/">
+            View Source <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 md:py-20 px-grid-margin max-w-container-max mx-auto bg-surface-container-lowest border-t-2 border-primary-container/20 relative z-10 scroll-reveal animate-fade-up reveal in-view active">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+<div class="space-y-4">
+<div class="font-display-lg text-4xl font-extrabold text-primary-container tracking-tighter">Portfolio</div>
+<p class="text-on-surface-variant max-w-xs font-body-md text-sm">Building the future of digital experiences with logic and creativity at SJCET.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="group flex items-center text-on-surface-variant hover:text-primary transition-all duration-300 transform hover:-translate-y-1 font-medium hover:scale-110" href="https://github.com/abhinavaby">
+<span class="font-label-md">GitHub</span>
+<span class="material-symbols-outlined text-xs ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-primary">north_east</span>
+</a>
+<a class="group flex items-center text-on-surface-variant hover:text-secondary transition-all duration-300 transform hover:-translate-y-1 font-medium hover:scale-110" href="https://www.linkedin.com/in/abhinav-aby-ab04753a6/">
+<span class="font-label-md">LinkedIn</span>
+<span class="material-symbols-outlined text-xs ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-secondary">north_east</span>
+</a>
+<a class="group flex items-center text-on-surface-variant hover:text-primary transition-all duration-300 transform hover:-translate-y-1 font-medium hover:scale-110" href="mailto:abhinavaby07@gmail.com">
+<span class="font-label-md">Email</span>
+<span class="material-symbols-outlined text-xs ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-primary">north_east</span>
+</a>
+<a class="group flex items-center text-on-surface-variant hover:text-secondary transition-all duration-300 transform hover:-translate-y-1 font-medium hover:scale-110" >
+<span class="font-label-md">Instagram</span>
+<span class="material-symbols-outlined text-xs ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-secondary">north_east</span>
+</a>
+</div>
+<div class="flex flex-col items-end gap-4">
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-all duration-300 group shadow-lg" href="#home">
+<span class="material-symbols-outlined group-hover:-translate-y-1 transition-transform">arrow_upward</span>
+</a>
+<div class="font-label-md text-xs text-on-surface-variant opacity-60">
+                © 2024 SJCET PALAI CS. All rights reserved.
             </div>
-          </div>
-        </div>
-      </section>
+</div>
+</div>
+</footer>
+<script>
+        // Simple mobile nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        navToggle.addEventListener('click', () => {
+            if (mobileNav.classList.contains('-translate-x-full')) {
+                mobileNav.classList.remove('-translate-x-full');
+            } else {
+                mobileNav.classList.add('-translate-x-full');
+            }
+        });
 
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <h2>About</h2>
-            <p>Short introduction and what I’m learning right now.</p>
-          </div>
+        // Intersection Observer for scroll reveals
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
 
-          <div class="grid-2">
-            <div class="card" data-reveal>
-              <h3 class="card__title">Who I am</h3>
-              <p class="card__text">
-                I’m a first-year Computer Science student at <strong>SJCET Palai</strong>. I enjoy building
-                small tools, learning data structures, and polishing UI details.
-              </p>
-            </div>
-            <div class="card" data-reveal>
-              <h3 class="card__title">How I work</h3>
-              <p class="card__text">
-                I learn by doing: start simple, ship a working prototype, then iterate.
-                My goal is to become confident in both problem-solving and web development.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-      <section id="projects" class="section section--alt">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <h2>Projects</h2>
-            <p>Replace these placeholders with your real projects.</p>
-          </div>
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
 
-          <div class="grid-3">
-            <article class="project card" data-reveal data-stagger>
-              <div class="project__top" data-reveal>
-                <div class="project__badge" aria-hidden="true">01</div>
-                <div class="project__title-row">
-                  <h3 class="project__title">Portfolio Starter</h3>
-                  <span class="project__status">Live</span>
-                </div>
-              </div>
+        // Magnetic Button Effect
+        const magneticBtns = document.querySelectorAll('.magnetic-btn');
+        magneticBtns.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0px, 0px) scale(1)';
+            });
+        });
+        
+        // New Reveal Animation Observer
+        const revealObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
 
-              <p class="project__desc" data-reveal>
-                A clean portfolio template with sections, animations, and smooth scrolling.
-              </p>
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealObserverOptions);
 
-              <div class="project__meta" data-reveal>
-                <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
-              </div>
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+    </script>
 
-              <div class="project__actions" data-reveal>
-                <a class="cta-btn cta-btn--light" href="#links">Discuss</a>
-                <button class="cta-btn cta-btn--dark" type="button" data-project-toggle aria-expanded="false">
-                  View details
-                </button>
-              </div>
 
-              <div class="project__more" hidden>
-                <ul class="project__bullets">
-                  <li>Responsive layout + accessible navigation</li>
-                  <li>Scroll-based animations and staggered reveals</li>
-                  <li>Clean structure for easy editing</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="project card" data-reveal data-stagger>
-              <div class="project__top" data-reveal>
-                <div class="project__badge" aria-hidden="true">02</div>
-                <div class="project__title-row">
-                  <h3 class="project__title">DSA Practice Tracker</h3>
-                  <span class="project__status project__status--build">Building</span>
-                </div>
-              </div>
-
-              <p class="project__desc" data-reveal>Track topics, add notes, and monitor progress over time.</p>
-
-              <div class="project__meta" data-reveal>
-                <span class="chip">Algorithms</span><span class="chip">Learning</span>
-              </div>
-
-              <div class="project__actions" data-reveal>
-                <a class="cta-btn cta-btn--light" href="#links">Discuss</a>
-                <button class="cta-btn cta-btn--dark" type="button" data-project-toggle aria-expanded="false">
-                  View details
-                </button>
-              </div>
-
-              <div class="project__more" hidden>
-                <ul class="project__bullets">
-                  <li>Topic-wise roadmap and daily goals</li>
-                  <li>Progress stats + notes per problem</li>
-                  <li>Exportable weekly summary</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="project card" data-reveal data-stagger>
-              <div class="project__top" data-reveal>
-                <div class="project__badge" aria-hidden="true">03</div>
-                <div class="project__title-row">
-                  <h3 class="project__title">Study Notes Web App</h3>
-                  <span class="project__status project__status--idea">Idea</span>
-                </div>
-              </div>
-
-              <p class="project__desc" data-reveal>A lightweight notes app with search and tags.</p>
-
-              <div class="project__meta" data-reveal>
-                <span class="chip">Frontend</span><span class="chip">UX</span>
-              </div>
-
-              <div class="project__actions" data-reveal>
-                <a class="cta-btn cta-btn--light" href="#links">Discuss</a>
-                <button class="cta-btn cta-btn--dark" type="button" data-project-toggle aria-expanded="false">
-                  View details
-                </button>
-              </div>
-
-              <div class="project__more" hidden>
-                <ul class="project__bullets">
-                  <li>Fast search and tag filters</li>
-                  <li>Offline-first notes storage</li>
-                  <li>Clean reading-mode UI</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <h2>Skills</h2>
-            <p>These are areas I’m actively learning.</p>
-          </div>
-
-          <div class="skills">
-            <div class="skill" data-reveal>
-              <div class="skill__title">Web Development</div>
-              <div class="skill__bar" role="progressbar" aria-label="Web Development" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill__fill" style="width: 60%"></span>
-              </div>
-              <div class="skill__meta">HTML, CSS, JavaScript</div>
-            </div>
-            <div class="skill" data-reveal>
-              <div class="skill__title">DSA</div>
-              <div class="skill__bar" role="progressbar" aria-label="DSA" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill__fill" style="width: 45%"></span>
-              </div>
-              <div class="skill__meta">Arrays, Strings, Recursion</div>
-            </div>
-            <div class="skill" data-reveal>
-              <div class="skill__title">UI/UX</div>
-              <div class="skill__bar" role="progressbar" aria-label="UI/UX" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill__fill" style="width: 50%"></span>
-              </div>
-              <div class="skill__meta">Layout, typography, animations</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="links" class="section section--alt">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <h2>Links</h2>
-            <p>Hover to pause. Click to open.</p>
-          </div>
-
-          <div class="social-marquee" data-reveal aria-label="Social links loop">
-            <div class="marquee">
-              <div class="marquee__track">
-                <div class="marquee__group">
-                      <a class="icon-pill" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M12 .6a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.1c-3.21.7-3.89-1.37-3.89-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.12-3.07 0 0 .96-.31 3.14 1.18a10.9 10.9 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.6.24 2.78.12 3.07.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.56A11.5 11.5 0 0 0 12 .6Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">GitHub</span>
-                      </a>
-
-                      <a class="icon-pill" href="mailto:hello@abhinavaby.dev" aria-label="Email">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-6.67 4.45a2 2 0 0 1-2.22 0L4.04 8.25A.75.75 0 1 1 4.86 7l6.53 4.36a.5.5 0 0 0 .55 0L18.77 7a.75.75 0 1 1 .83 1.25Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">Mail</span>
-                      </a>
-
-                      <a class="icon-pill" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.5A4 4 0 0 0 3.5 7.5v9a4 4 0 0 0 4 4h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.75-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">Instagram</span>
-                      </a>
-
-                      <a class="icon-pill" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3.5 9h3v11h-3V9Zm7 0h2.9v1.5h.04c.4-.75 1.38-1.54 2.84-1.54 3.03 0 3.59 2 3.59 4.6V20h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.78V20h-3V9Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">LinkedIn</span>
-                      </a>
-
-                      <a class="icon-pill" href="tel:+910000000000" aria-label="Mobile">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 1.5a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H7Zm5 15.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">Mobile</span>
-                      </a>
-                </div>
-
-                <div class="marquee__group" aria-hidden="true">
-                      <a class="icon-pill" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M12 .6a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.1c-3.21.7-3.89-1.37-3.89-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.67 1.25 3.32.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.12-3.07 0 0 .96-.31 3.14 1.18a10.9 10.9 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.6.24 2.78.12 3.07.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.56A11.5 11.5 0 0 0 12 .6Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">GitHub</span>
-                      </a>
-                      <a class="icon-pill" href="mailto:hello@abhinavaby.dev" aria-label="Email">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-6.67 4.45a2 2 0 0 1-2.22 0L4.04 8.25A.75.75 0 1 1 4.86 7l6.53 4.36a.5.5 0 0 0 .55 0L18.77 7a.75.75 0 1 1 .83 1.25Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">Mail</span>
-                      </a>
-                      <a class="icon-pill" href="https://www.instagram.com/abhinav_aby_01" target="_blank" rel="noreferrer" aria-label="Instagram">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.5A4 4 0 0 0 3.5 7.5v9a4 4 0 0 0 4 4h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.75-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">Instagram</span>
-                      </a>
-                      <a class="icon-pill" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3.5 9h3v11h-3V9Zm7 0h2.9v1.5h.04c.4-.75 1.38-1.54 2.84-1.54 3.03 0 3.59 2 3.59 4.6V20h-3v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.78V20h-3V9Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">LinkedIn</span>
-                      </a>
-                      <a class="icon-pill" href="tel:+910000000000" aria-label="Mobile">
-                        <span class="icon" aria-hidden="true">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                              d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 1.5a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H7Zm5 15.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="icon-pill__label">Mobile</span>
-                      </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer" aria-label="Footer">
-        <div class="container footer__inner">
-          <span>Copyright © <span id="year"></span> Abhinav Aby</span>
-          <span class="footer__small">Built with HTML/CSS/JS. Replace placeholders with your real info.</span>
-        </div>
-      </footer>
-    </main>
-
-    <script src="./script.js"></script>
-  </body>
-</html>
-
+</body></html>
